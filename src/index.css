@@ -1,0 +1,26 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-mincho: 'Shippori Mincho', serif;
+  --font-gothic: 'Zen Kaku Gothic New', sans-serif;
+
+  --color-kura-cream: #f3eee3;
+  --color-kura-cream-dark: #ece4d3;
+  --color-kura-sumi: #2b2925;
+  --color-kura-sumi-soft: #4a463f;
+  --color-kura-earth: #a9764f;
+  --color-kura-earth-dark: #8a5d3b;
+  --color-kura-green: #4b5d44;
+  --color-kura-border: #d9cfba;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: var(--color-kura-cream);
+  color: var(--color-kura-sumi);
+  font-family: var(--font-gothic);
+}
