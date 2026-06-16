@@ -1,8 +1,8 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
 @theme {
-  --font-mincho: 'Shippori Mincho', serif;
-  --font-gothic: 'Zen Kaku Gothic New', sans-serif;
+  --font-mincho: "Shippori Mincho", serif;
+  --font-gothic: "Zen Kaku Gothic New", sans-serif;
 
   --color-kura-cream: #f3eee3;
   --color-kura-cream-dark: #ece4d3;
@@ -19,7 +19,6 @@ html {
 }
 
 body {
-  margin: 0;
   background-color: var(--color-kura-cream);
   color: var(--color-kura-sumi);
   font-family: var(--font-gothic);

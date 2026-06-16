@@ -1,16 +1,37 @@
-# React + Vite
+# Coffee Kura Re — オンラインショップ
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Next.js（App Router）+ TypeScript + Tailwind CSS で構築した、コーヒー豆オンラインショップの土台です。
+現時点では表示のみで、決済・カート機能は未実装です。
 
-Currently, two official plugins are available:
+## 開発サーバーの起動
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+```bash
+npm install
+npm run dev
+```
 
-## React Compiler
+[http://localhost:3000](http://localhost:3000) を開いて確認してください。
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ページ構成
 
-## Expanding the ESLint configuration
+- `/` トップ（ブランドストーリー＋おすすめ豆）
+- `/shop` 商品一覧
+- `/shop/[slug]` 商品詳細
+- `/about` 焙煎へのこだわり・プロフィール
+- `/legal/tokushoho` 特定商取引法に基づく表記
+- `/legal/privacy` プライバシーポリシー
+- `/legal/terms` 利用規約
+- `/shipping` 配送・返品について
+- `/contact` お問い合わせ（メールリンク）
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 商品データ
+
+`src/data/products.ts` に型付きの配列で保持しています。商品の追加・編集はこのファイルを直接更新してください。
+
+## ビルド確認
+
+```bash
+npm run lint
+npx tsc --noEmit
+npm run build
+```
