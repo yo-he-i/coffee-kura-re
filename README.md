@@ -35,3 +35,28 @@ npm run lint
 npx tsc --noEmit
 npm run build
 ```
+
+## GitHub Pages への公開
+
+このリポジトリは静的書き出し（`output: 'export'`）に対応しており、`.github/workflows/deploy-pages.yml` から GitHub Pages へ自動デプロイできます。
+
+### 初回セットアップ
+
+1. GitHub のリポジトリ設定 → **Settings → Pages** で、Source を **GitHub Actions** に設定する。
+2. このブランチを `main` にマージ（または `main` ブランチを作成）する。`main` への push をトリガーにワークフローが実行されます。
+3. ワークフローが成功すると、`https://<ユーザー名>.github.io/coffee-kura-re/` で公開されます。
+
+### 仕組み
+
+- `next.config.ts` で `GITHUB_PAGES=true` のときだけ `basePath` / `assetPrefix` に `/coffee-kura-re` を付与しています（プロジェクトページとして公開するため）。
+- `npm run build:gh-pages` で `GITHUB_PAGES=true` を付けてビルドし、`out/` に静的ファイルを生成します。
+- `public/.nojekyll` により、GitHub Pages 側で `_next` などアンダースコア始まりのフォルダが無視されないようにしています。
+
+### ローカルで書き出し結果を確認する
+
+```bash
+npm run build:gh-pages
+npx serve out
+```
+
+※ ローカルで `npx serve out` する場合、`basePath` が付いた状態のリンクになるため、表示されるURLの末尾に `/coffee-kura-re/` を付けてアクセスしてください。
