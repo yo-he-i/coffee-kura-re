@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2a2620"/>
+      <stop offset="100%" stop-color="#1a1814"/>
+    </linearGradient>
+    <linearGradient id="counter" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#4a3f2e"/>
+      <stop offset="100%" stop-color="#2e2619"/>
+    </linearGradient>
+    <linearGradient id="warmlight" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a88c4f" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#a88c4f" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#wall)"/>
+  <!-- Back wall shelves -->
+  <rect x="0" y="80" width="800" height="4" fill="#3d3528" opacity="0.8"/>
+  <rect x="0" y="180" width="800" height="4" fill="#3d3528" opacity="0.8"/>
+  <rect x="0" y="280" width="800" height="4" fill="#3d3528" opacity="0.8"/>
+  <!-- Coffee bags on shelf -->
+  <rect x="60" y="100" width="40" height="75" rx="2" fill="#1a1915" stroke="#a88c4f" stroke-width="0.6" opacity="0.9"/>
+  <rect x="110" y="105" width="40" height="70" rx="2" fill="#252219" stroke="#a88c4f" stroke-width="0.6" opacity="0.9"/>
+  <rect x="160" y="98" width="40" height="77" rx="2" fill="#1a1915" stroke="#a88c4f" stroke-width="0.6" opacity="0.9"/>
+  <rect x="240" y="103" width="40" height="72" rx="2" fill="#2a2418" stroke="#a88c4f" stroke-width="0.6" opacity="0.9"/>
+  <!-- Warm overhead light -->
+  <ellipse cx="400" cy="0" rx="300" ry="120" fill="url(#warmlight)"/>
+  <!-- Counter -->
+  <rect x="0" y="380" width="800" height="220" fill="url(#counter)"/>
+  <rect x="0" y="378" width="800" height="4" fill="#6b5a3e" opacity="0.9"/>
+  <!-- Counter top items -->
+  <rect x="120" y="340" width="60" height="35" rx="1" fill="#0d0c0a" stroke="#a88c4f" stroke-width="0.5" opacity="0.8"/>
+  <!-- Drip kettle silhouette -->
+  <path d="M300 350 Q300 320 320 315 L360 315 Q380 315 380 330 L380 350 Z" fill="#2a2820" stroke="#efede7" stroke-width="0.8" opacity="0.7"/>
+  <!-- Pour-over -->
+  <path d="M460 360 L440 320 L480 320 Z" fill="#3a3228" stroke="#efede7" stroke-width="0.6" opacity="0.6"/>
+  <!-- Vertical accent line -->
+  <rect x="200" y="0" width="1" height="600" fill="#a88c4f" opacity="0.08"/>
+  <rect x="600" y="0" width="1" height="600" fill="#a88c4f" opacity="0.08"/>
+</svg>

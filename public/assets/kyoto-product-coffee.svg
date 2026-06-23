@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e1c17"/>
+      <stop offset="100%" stop-color="#0d0c0a"/>
+    </linearGradient>
+    <linearGradient id="bag" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2c2a25"/>
+      <stop offset="100%" stop-color="#11100e"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <!-- Subtle grid -->
+  <line x1="0" y1="300" x2="600" y2="300" stroke="#a88c4f" stroke-width="0.5" opacity="0.1"/>
+  <line x1="300" y1="0" x2="300" y2="600" stroke="#a88c4f" stroke-width="0.5" opacity="0.1"/>
+  <!-- Coffee bag body -->
+  <rect x="180" y="100" width="240" height="360" rx="4" fill="url(#bag)" stroke="#efede7" stroke-width="0.8" opacity="0.9"/>
+  <!-- Inner border -->
+  <rect x="196" y="116" width="208" height="328" rx="2" fill="none" stroke="#a88c4f" stroke-width="0.7" opacity="0.6"/>
+  <!-- Top seal line -->
+  <rect x="180" y="136" width="240" height="1" fill="#efede7" opacity="0.15"/>
+  <!-- Brand text area -->
+  <rect x="210" y="155" width="180" height="60" fill="none" stroke="#efede7" stroke-width="0.5" opacity="0.2"/>
+  <!-- Coffee bean illustration -->
+  <ellipse cx="300" cy="295" rx="44" ry="52" fill="#3a3025" stroke="#a88c4f" stroke-width="0.8" opacity="0.8"/>
+  <path d="M300 248 Q300 295 300 347" stroke="#a88c4f" stroke-width="1.2" fill="none" opacity="0.7"/>
+  <!-- Bottom label -->
+  <rect x="196" y="400" width="208" height="1" fill="#efede7" opacity="0.2"/>
+  <rect x="196" y="420" width="208" height="1" fill="#efede7" opacity="0.1"/>
+</svg>

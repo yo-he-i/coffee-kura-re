@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { SiteHeader } from "@/components/SiteHeader";
-import { SiteFooter } from "@/components/SiteFooter";
 
 export const metadata: Metadata = {
   title: "Coffee Kura Re（コーヒー蔵リ）",
@@ -29,9 +27,7 @@ export default function RootLayout({
         />
       </head>
       <body className="min-h-full flex flex-col font-gothic antialiased">
-        <SiteHeader />
-        <main className="flex-1">{children}</main>
-        <SiteFooter />
+        {children}
       </body>
     </html>
   );

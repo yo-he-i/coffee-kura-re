@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="gbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#d7d4cb"/>
+      <stop offset="100%" stop-color="#c4c0b5"/>
+    </linearGradient>
+    <linearGradient id="box" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#25231f"/>
+      <stop offset="100%" stop-color="#1a1815"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#gbg)"/>
+  <!-- Subtle texture lines -->
+  <line x1="0" y1="150" x2="800" y2="150" stroke="#12110f" stroke-width="0.5" opacity="0.06"/>
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#12110f" stroke-width="0.5" opacity="0.06"/>
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#12110f" stroke-width="0.5" opacity="0.06"/>
+  <!-- Gift box -->
+  <rect x="260" y="180" width="280" height="240" rx="2" fill="url(#box)" stroke="#efede7" stroke-width="0.8" opacity="0.9"/>
+  <!-- Box ribbon vertical -->
+  <rect x="393" y="180" width="14" height="240" fill="#a88c4f" opacity="0.75"/>
+  <!-- Box ribbon horizontal -->
+  <rect x="260" y="293" width="280" height="14" fill="#a88c4f" opacity="0.75"/>
+  <!-- Box lid -->
+  <rect x="255" y="164" width="290" height="36" rx="2" fill="#2e2c27" stroke="#efede7" stroke-width="0.8" opacity="0.95"/>
+  <!-- Ribbon bow center -->
+  <ellipse cx="400" cy="182" rx="22" ry="18" fill="#a88c4f" opacity="0.9"/>
+  <ellipse cx="400" cy="182" rx="10" ry="8" fill="#6e5a32" opacity="0.9"/>
+  <!-- Bow loops -->
+  <ellipse cx="368" cy="170" rx="24" ry="12" fill="#a88c4f" opacity="0.7" transform="rotate(-25 368 170)"/>
+  <ellipse cx="432" cy="170" rx="24" ry="12" fill="#a88c4f" opacity="0.7" transform="rotate(25 432 170)"/>
+  <!-- Drip bags beside box -->
+  <rect x="140" y="220" width="90" height="160" rx="2" fill="#1a1915" stroke="#a88c4f" stroke-width="0.7" opacity="0.85"/>
+  <rect x="150" y="232" width="70" height="136" rx="1" fill="none" stroke="#efede7" stroke-width="0.4" opacity="0.3"/>
+  <rect x="570" y="240" width="90" height="140" rx="2" fill="#252219" stroke="#a88c4f" stroke-width="0.7" opacity="0.85"/>
+  <rect x="580" y="252" width="70" height="116" rx="1" fill="none" stroke="#efede7" stroke-width="0.4" opacity="0.3"/>
+  <!-- Shadow under boxes -->
+  <ellipse cx="400" cy="432" rx="180" ry="12" fill="#12110f" opacity="0.12"/>
+</svg>
