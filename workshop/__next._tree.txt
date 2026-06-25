@@ -1,0 +1,3 @@
+:HL["/coffee-kura-re/_next/static/chunks/0q4ohvatx10fv.css","style"]
+:HL["https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap","style"]
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"workshop","param":null,"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}},"staleTime":300,"buildId":"MWNXzTcN4FryYKeD85zy6"}
